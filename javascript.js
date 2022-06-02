@@ -14,7 +14,15 @@ function shuffleAmounts (array) {
     return array;
 }
 
+
 function assignSuitcases(array) {
-    let suitCases = document.querySelectorAll('.suitcases')
-    suitCases.forEach(suitcase => console.log(suitcase));
+    const suitCases = document.querySelectorAll('.suitcases')
+    for(let i = 0; i < array.length; i++) {
+        let suitCase = document.querySelector(`.suitcase${i+1}`);
+        suitCase.textContent =  `$ ${array[i]}`
+    }
 }
+
+let shuffledAmounts = shuffleAmounts(dollarAmounts);
+
+assignSuitcases(shuffledAmounts);
