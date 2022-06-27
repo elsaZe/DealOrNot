@@ -11,8 +11,14 @@ h2 {
     text-align: center;
 }
 
+.reveal{
+    background-color: rgb(117, 255, 255);
+    border-radius: 5px;
+}
+
+
 .gameScreen {
-    display: flex;
+    display: flex; 
 }
 
 ol li{
@@ -27,6 +33,11 @@ ol li{
     width: 100px;
 }
 
+.unavailable {
+    color:rgb(0, 0, 0);
+    background: linear-gradient(rgb(144, 144, 144), rgb(50, 50, 50));
+}
+
 .suitcases {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +45,7 @@ ol li{
     background-color: lightgoldenrodyellow
 }
 
-#suitcase {
+.hide {
     border-width: 2px black;
     margin: 10px;
     padding: 10px;
@@ -42,5 +53,19 @@ ol li{
     border-radius: 5px;
     width: 80px;
     text-align: center;
-    box-shadow: 2px 2px gray;
+    box-shadow: 2px 2px rgb(128,128,128);
+    color: silver;
 }
+
+.show{
+    border-width: 2px black;
+    margin: 10px;
+    padding: 10px;
+    background-color: silver;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    box-shadow: 2px 2px rgb(128,128,128);
+    color: black; 
+}
+

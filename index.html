@@ -8,66 +8,95 @@
 <body>
     <h1>Deal or No Deal?</h1>
     <h2>Choose Your Case</h2>
+    <div class ="showOffer"></div>
+        <button class = "reveal">Reveal Current Offer</button>
+        <div class = "offer"></div>
     <div class = "gameScreen">
-        <ol class = "dollarAmounts">
-            <li id="0.1">$0.01</li>
-            <li id ="1">$1</li>
-            <li id ="5">$5</li>
-            <li id ="10">$10</li>
-            <li id ="25">$25</li>
-            <li id ="50">$50</li>
-            <li id ="74">$75</li>
-            <li id ="100">$100</li>
-            <li id ="200">$200</li>
-            <li id ="300">$300</li>
-            <li id ="400">$400</li>
-            <li id ="500">$500</li>
-            <li id ="750">$750</li>
+        <ol class = "lowDollarAmounts">
+            <li id="0.01" class = "available">$0.01</li>
+            <li id ="1" class = "available">$1</li>
+            <li id ="5" class = "available">$5</li>
+            <li id ="10" class = "available">$10</li>
+            <li id ="25" class = "available">$25</li>
+            <li id ="50" class = "available">$50</li>
+            <li id ="75" class = "available">$75</li>
+            <li id ="100" class = "available">$100</li>
+            <li id ="200" class = "available">$200</li>
+            <li id ="300" class = "available">$300</li>
+            <li id ="400" class = "available">$400</li>
+            <li id ="500" class = "available">$500</li>
+            <li id ="750" class = "available">$750</li>
         </ol>
             
         <div class = "suitcases">
-            <div id = "suitcase" class = "suitcase1"></div>
-            <div id = "suitcase"class = "suitcase2"></div>
-            <div id = "suitcase"class = "suitcase3"></div>
-            <div id = "suitcase"class = "suitcase4"></div>
-            <div id = "suitcase"class = "suitcase5"></div>
-            <div id = "suitcase"class = "suitcase6"></div>
-            <div id = "suitcase"class = "suitcase7"></div>
-            <div id = "suitcase"class = "suitcase8"></div>
-            <div id = "suitcase" class = "suitcase9"></div>
-            <div id = "suitcase"class = "suitcase10"></div>
-            <div id = "suitcase"class = "suitcase11"></div>
-            <div id = "suitcase"class = "suitcase12"></div>
-            <div id = "suitcase" class = "suitcase13"></div>
-            <div id = "suitcase"class = "suitcase14"></div>
-            <div id = "suitcase"class = "suitcase15"></div>
-            <div id = "suitcase"class = "suitcase16"></div>
-            <div id = "suitcase"class = "suitcase17"></div>
-            <div id = "suitcase"class = "suitcase18"></div>
-            <div id = "suitcase"class = "suitcase19"></div>
-            <div id = "suitcase"class = "suitcase20"></div>
-            <div id = "suitcase"class = "suitcase21"></div>
-            <div id = "suitcase"class = "suitcase22"></div>
-            <div id = "suitcase"class = "suitcase23"></div>
-            <div id = "suitcase"class = "suitcase24"></div>
-            <div id = "suitcase"class = "suitcase25"></div>
-            <div id = "suitcase"class = "suitcase26"></div>
+            <p>#1</p>
+            <div id = "suitcase1" class = "hide" ></div>
+            <p>#2</p>
+            <div id = "suitcase2" class = "hide" ></div>
+            <p>#3</p>
+            <div id = "suitcase3" class = "hide" ></div>
+            <p>#4</p>
+            <div id = "suitcase4" class = "hide" ></div>
+            <p>#5</p>
+            <div id = "suitcase5" class = "hide"> </div>
+            <p>#6</p>
+            <div id = "suitcase6" class = "hide" ></div>
+            <p>#7</p>
+            <div id = "suitcase7" class = "hide"  ></div>
+            <p>#8</p>
+            <div id = "suitcase8" class = "hide"  ></div>
+            <p>#9</p>
+            <div id = "suitcase9" class = "hide"  ></div>
+            <p>#10</p>
+            <div id = "suitcase10" class = "hide"  ></div>
+            <p>#11</p>
+            <div id = "suitcase11" class = "hide" ></div>
+            <p>#12</p>
+            <div id = "suitcase12" class = "hide" ></div>
+            <p>#13</p>
+            <div id = "suitcase13" class = "hide" ></div>
+            <p>#14</p>
+            <div id = "suitcase14" class = "hide" ></div>
+            <p>#15</p>
+            <div id = "suitcase15" class = "hide" ></div>
+            <p>#16</p>
+            <div id = "suitcase16" class = "hide" ></div>
+            <p>#17</p>
+            <div id = "suitcase17" class = "hide" ></div>
+            <p>#18</p>
+            <div id = "suitcase18" class = "hide" ></div>
+            <p>#19</p>
+            <div id = "suitcase19" class = "hide" ></div>
+            <p>#20</p>
+            <div id = "suitcase20" class = "hide" ></div>
+            <p>#21</p>
+            <div id = "suitcase21" class = "hide" ></div>
+            <p>#22</p>
+            <div id = "suitcase22" class = "hide" ></div>
+            <p>#23</p>
+            <div id = "suitcase23" class = "hide" ></div>
+            <p>#24</p>
+            <div id = "suitcase24" class = "hide" ></div>
+            <p>#25</p>
+            <div id = "suitcase25" class = "hide" ></div>
+            <p>#26</p>
+            <div id = "suitcase26" class = "hide" ></div>
         </div>
 
-        <ol>
-            <li id ="1000">$1,000</li>
-            <li id ="5000">$5,000</li>
-            <li id ="10000">$10,000</li>
-            <li id ="25000">$25,000</li>
-            <li id ="50000">$50,000</li>
-            <li id ="75000">$75,000</li>
-            <li id ="100000">$100,000</li>
-            <li id ="200000">$200,000</li>
-            <li id ="300000">$300,000</li>
-            <li id ="400000">$400,000</li>
-            <li id ="500000">$500,000</li>
-            <li id ="750000">$750,000</li>
-            <li id ="1000000">$1,000,000</li>
+        <ol class = "highDollarAmounts">
+            <li id ="1000" class = "available">$1,000</li>
+            <li id ="5000" class = "available">$5,000</li>
+            <li id ="10000" class = "available">$10,000</li>
+            <li id ="25000" class = "available">$25,000</li>
+            <li id ="50000" class = "available"> $50,000</li>
+            <li id ="75000" class = "available">$75,000</li>
+            <li id ="100000" class = "available">$100,000</li>
+            <li id ="200000" class = "available">$200,000</li>
+            <li id ="300000" class = "available">$300,000</li>
+            <li id ="400000"class = "available">$400,000</li>
+            <li id ="500000" class = "available">$500,000</li>
+            <li id ="750000"class = "available">$750,000</li>
+            <li id ="1000000"class = "available">$1,000,000</li>
         </ol>
     </div>
     <script src="javascript.js"></script>
